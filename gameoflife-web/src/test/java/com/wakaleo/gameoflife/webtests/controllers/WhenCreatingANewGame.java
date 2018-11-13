@@ -27,6 +27,7 @@ public class WhenCreatingANewGame {
         ModelAndView homeView = controller.newGame();
         assertThat(homeView.getModel().get("universe"), is(not(nullValue())));
     }
+    // these line for test purpose to make sure github syc with local.
 
     @Test
     public void whenTheUserCreatesTheFirstGenerationAnEmptyUniverseShouldBeAddedToTheSession() {
